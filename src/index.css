@@ -1,13 +1,99 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    list-style: none;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #609d60;
+}
+
+.App {
+    height: 100vh;
+    max-width: 686px;
+    margin: 0 auto;
+    background-color: white;
+}
+
+.App h2 {
+    margin-bottom: 20px;
+}
+
+.App h4 {
+    margin-bottom: 10px;
+}
+
+.App>div {
+
+    padding: 20px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+.App form {
+    display: flex;
+    flex-direction: column;
+}
+
+.App form>label {
+    display: flex;
+    flex-direction: column;
+
+    width: 100%;
+}
+
+.App form>label input {
+    margin: 10px 0;
+    border: 1px solid grey;
+    padding: 10px;
+    border-radius: 10px;
+
+    height: 30px;
+
+    font-size: 16px;
+}
+
+.App form>label textarea {
+    padding: 10px;
+    border: 1px solid grey;
+    border-radius: 10px;
+    margin: 10px 0;
+
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.App form button {
+    padding: 10px 30px;
+    border-radius: 10px;
+
+    background-color: rgba(0, 0, 0, 0.918);
+    color: white;
+
+    cursor: pointer;
+
+    transition: .3s;
+
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.App form button:hover {
+    background-color: rgba(0, 0, 0, 0.507);
+}
+
+.App ul li {
+    margin-bottom: 10px;
+}
+
+.App hr {
+    border: 1px solid grey;
+    margin: 0 21px;
 }
